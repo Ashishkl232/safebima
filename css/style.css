@@ -852,7 +852,7 @@ select {
 
 .accordion button[aria-expanded='true'] + .accordion-content {
     opacity: 1;
-    max-height: 64em!important;
+    max-height: 71em!important;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 }
