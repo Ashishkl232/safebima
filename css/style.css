@@ -835,6 +835,27 @@ select {
     margin-top: -28px;
     font-size: 14px;
 }
+
+
+  
+.question .container{
+    margin: 0 auto;
+  padding: 4rem;
+  width: 23rem!important;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+    color: #000;
+    font-size: 17px!important;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 64em!important;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
