@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -89,9 +92,14 @@
 }
 
 .text{
-	padding: 0 20% ;
+	padding: 0 5% ;
 }
 
+.text p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
 
 .contact_card{
     box-shadow: none;
@@ -784,6 +792,19 @@ input[type="checkbox"] {
     padding: 0 5%;
 }
 
+
+.text p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-align: left!important;
+}
+
+
+.main-footer footer{
+   padding: 20px;
+}
+
 select {
     width: 100%!important;
     border-radius: unset;
@@ -1162,52 +1183,114 @@ input[type="checkbox"]{
 }
 /* media query end */
 
-.Faqus .faqus-content ul{
-    padding: 20px 30px;
+.question .container{
+    margin: 0 auto;
+  padding: 4rem;
+  width: 50rem;
 }
 
-.Faqus .faqus-content li{
-  font-weight: 600;
-    list-style: none;
-      cursor: pointer;
-     box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
-     padding: 20px;
-     border: 3px solid #102bb9;
-     margin-top: 10px;
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
 
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #102bb9;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #102bb9;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  color: #000;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 25em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+   background: #102bb9;
+   color: #fff;
+   padding: 0 10px;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
 }
 
 
-
-.Faqus .faqus-content li img {
-    width: 20px;
-    position: absolute;
-    margin-left: 80%;
-    margin-top: -19px;
+.desktop-version .text{
+      padding: 0 20%;
 }
-.Faqus .faqus-content li .conts{
-    display: none;
-  
-}
-
-.Faqus .faqus-content li:hover{
-    transition: 1000ms linear;
-}
-.Faqus .faqus-content li:hover .conts{
-    display: block;
-     box-shadow: none;
-     background: #102bb9 ;
-     color: #ffffff;
-      font-weight: 300;
-      padding: 10px 10px;
-      margin-top: 5px;
-
-}
-
-.Faqus h4{
-    text-align: center;
-    font-weight: 600;
-}
-
-
-
